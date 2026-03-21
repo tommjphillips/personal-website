@@ -226,25 +226,35 @@ body {
 .skyline-divider {
     position: relative;
     width: 100%;
-    height: clamp(200px, 25vw, 350px);
-    background: linear-gradient(to bottom, var(--orange) 0%, #CC3D00 30%, var(--bg) 100%);
+    height: clamp(250px, 30vw, 400px);
     overflow: hidden;
+    background: var(--bg-light);
 }
 
-.skyline-svg {
-    position: absolute;
-    bottom: 0;
-    left: 0;
+.skyline-img {
     width: 100%;
     height: 100%;
+    object-fit: cover;
+    object-position: center 60%;
+    display: block;
 }
 
-.skyline-gradient {
+.skyline-gradient-top {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 40%;
+    background: linear-gradient(to bottom, var(--orange), transparent);
+    pointer-events: none;
+}
+
+.skyline-gradient-bottom {
     position: absolute;
     bottom: 0;
     left: 0;
     right: 0;
-    height: 60%;
+    height: 40%;
     background: linear-gradient(to top, var(--bg), transparent);
     pointer-events: none;
 }
