@@ -359,6 +359,40 @@ body {
     color: var(--dark);
 }
 
+/* ===== LinkedIn Posts Section ===== */
+.linkedin-posts {
+    padding: 8rem 0;
+    position: relative;
+    z-index: 1;
+}
+
+.posts-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+    max-width: 540px;
+}
+
+.post-embed {
+    background: white;
+    border: 1px solid rgba(0,0,0,0.06);
+    padding: 1rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+}
+
+.post-embed:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 35px rgba(0,0,0,0.08);
+}
+
+.post-embed iframe {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    border: none;
+}
+
 /* ===== Contact Section ===== */
 .contact {
     padding: 8rem 0;
